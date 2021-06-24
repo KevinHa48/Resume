@@ -3,17 +3,17 @@
 % Convenience command - make it easy to fill template
 
 % Create job position command. Parameters: company, position, location, when
-\newcommand{\resumeHeading}[4]{\runsubsection{#1}\descript{ | #2}\hfill\location{#3 | #4}\fakeNewLine\NoSpace}
+\newcommand{\resumeHeading}[4]{\runsubsection{#1,  #2}\hfill\location{#3 #4}\fakeNewLine\NoSpace}
 
 % Create education heading. Parameters: Name, degree, location, when
-\newcommand{\educationHeading}[4]{\runsubsection{#1}\hspace*{\fill}  \location{#3 | #4}\\
-\descript{#2}\fakeNewLine}
+\newcommand{\educationHeading}[4]{\runsubsection{#1}\hspace*{\fill}  \location{#4}\\
+\descript{#2\hspace*{\fill}{#3}}\fakeNewLine}
 
 % Parameters: courses
-\newcommand{\courseWork}[1]{\semiBold{Coursework:} #1}
+\newcommand{\courseWork}[1]{\customBold{Coursework:} \customRegular{#1}}
 
 % Parameters: courses
-\newcommand{\teacherAssistant}[1]{\semiBold{Teacher Assistant (TA):} #1}
+\newcommand{\teacherAssistant}[1]{\customBold{Teacher Assistant (TA):} #1}
 
 % Command to create smaller heading: Parameters: title, when
 \newcommand{\resumeSubheading}[2]{\minorSection{#1}\hfill\location{#2}\fakeNewLine\NoSpace}
@@ -24,7 +24,6 @@
 %--------------------------------------------------------------
 %     Profile
 %--------------------------------------------------------------
-\newcommand{\yourName}{First Last}
 \newcommand{\yourWebsite}{https://abdullaharif.tech}
 \newcommand{\yourEmail}{someEmail@edu.com}
 \newcommand{\yourPhone}{1-234-567-890}
@@ -45,105 +44,115 @@
 % \smallSep
 
 \begin{center}
-    \textbf{\Huge \scshape \yourName} \\ \vspace{1pt}
+    \textbf{\Huge \scshape \customBold{Kevin Ha}} \\ \vspace{1pt}
     \small \yourPhone $|$ \href{mailto:\yourEmail}{\underline{\yourEmail}} $|$ 
     \href{https://linkedin.com/in/\linkedInUserName}{\underline{linkedIn/\linkedInUserName}} $|$
     \href{https://github.com/\githubUserName}{\underline{github/\githubUserName}}
 \end{center}
 
 %--------------------------------------------------------------
-%     Experience
-%--------------------------------------------------------------
-\section{Work Experience}
-\resumeHeading{Amazon}{Software Development Engineer Intern}{Toronto, ON}{May 2020 – Aug 2020}
-\begin{tightemize}
-    \item Created a dynamic timeline to visualize the progression of work-sessions of Amazon\textquotesingle{}s delivery driver in \semiBold{React} and \semiBold{TypeScript}. So, my team could sift through multiple sessions to determine the root cause of trouble tickets.
-    %  \item Here is another bullet that I might choose to uncomment for some jobs
-    \item Integrated application with Amazon\textquotesingle{}s internal authentication system to restrict access to authorized employees.
-    \item Made the application scalable so it could handle information about millions of deliveries and show the progress of active sessions in real-time.
-    \item Thoroughly tested the project and implemented all required features. As a result, the tool was pushed to production, which surpassed the internship goal of reaching the beta stage.
-\end{tightemize}
-\sectionsep
-
-\resumeHeading{University of Windsor}{Research Assistant (RA)}{Windsor, ON}{Feb 2020 - May 2020}
-\begin{tightemize}
-    \item Developed an online Personal Health Record system in \semiBold{\href{https://spring.io/}{Spring.}}
-    \item Applied a
-    \href{https://link.springer.com/chapter/10.1007/978-3-642-10838-9\_23}{mCP-ABE} scheme to ensure secure fine-grained access control of patient's health records using the \href{http://gas.dia.unisa.it/projects/jpbc/}{JPBC} library
-\end{tightemize}
-\sectionsep
-
-\resumeHeading{JoaTu}{Software Engineer Intern}{Montreal, QC}{Dec 2018 – May 2019}
-\begin{tightemize}
-    \item Migrated legacy \semiBold{Django code} to \semiBold{Ruby in Rails.}
-    \item Created \semiBold{UML} diagrams and documented where features were implemented, to make the codebase more maintainable.
-\end{tightemize}
-\sectionsep
-
-%--------------------------------------------------------------
 %     Education
 %--------------------------------------------------------------
-\section{Education}
-\educationHeading{University of Windsor}{BSc. Computer Science with Software Engineering Specialization}{Windsor, ON}{Jun 2021}
-
-\teacherAssistant{World Wide Web Information Systems Development}
-
-\courseWork{Data Structures and Algorithms; Operating Systems;  Computer Security; Software Testing; Advanced Networking; Big Data Analytics}s
+\section{\underline{Education}}
+\educationHeading{Stevens Institute of Technology, \customItalic{Hoboken, NJ}}{Bachelor of Science, Computer Science}{GPA: 3.814/4.00}{August 2019 - May 2023}
+\smallSep\\[0.05in]
+\courseWork{Data Structures, Algorithms, Systems Programming, Theory of Computation, Web Development I \\Software Development Process, Discrete Structures}
    
 \sectionsep
+\section{\underline{Skills}}
+\begin{resumeSkillList}
+    \item{
+        \singleItem{Languages:}{Java, C++, Python, C, JavaScript, HTML, CSS, Bash, OCaml}
+        \\
+        \singleItem{Frameworks, Libraries and Tools:}{React, SpringBoot, Pandas, Bootstrap, jQuery, Node.js}
+        \\
+        \singleItem{Databases, Technology, and OS:}{MongoDB, Git, Linux (Arch \& Ubuntu), AWS, Adobe Photoshop/Premiere Pro}
+        \\
+    }
+\end{resumeSkillList}
+
+%  A more concise alternate 
+% \begin{resumeSkillList}
+%     \small{\item{
+%     \doubleItem{Languages:\\}{Java, C++, Python, HTML, CSS, C, JavaScript, OCaml}%
+%     {Frameworks and Libraries\\:}{Node.js, React, SpringBoot, jQuery, Pandas}
+%     \\
+%     \doubleItem{Technology:}{Git, AWS, GCP, Azure, Docker, Unity, Apache, \LaTeX}%
+%     {Databases:}{SQL (PostGres), MongoDB, Neo4j}
+%     }}
+% \end{resumeSkillList}
+\smallSep
+%--------------------------------------------------------------
+%     Experience
+%--------------------------------------------------------------
+\section{\underline{Work Experience}}
+\resumeHeading{Course Assistant}{\customItalic{Stevens Institute of Technology} (Hoboken, NJ)}{}{May 2021 – Present}
+\begin{tightemize}
+    \item Hosted weekly office hours and guided a class of 19 students in programming and lab assignments, 
+    covering topics such as Bash scripting, C programming in Linux, socket programming, and handling file I/O
+    %  \item Here is another bullet that I might choose to uncomment for some jobs
+\end{tightemize}
+\sectionsep
+
+\resumeHeading{Technology Research Intern}{\customItalic{FluroSat} (Remote)}{}{Feb 2020 - May 2020}
+\begin{tightemize}
+    \item Collaborated on research to refine FluroSat’s current marketing strategies by performing analysis on competitor initiatives and compiling 100s of customer data to identify new clientele
+    \item Utilized Pandas data science library to organize competitor social media data and trends to enhance FluroSat’s online presence
+    
+\end{tightemize}
+\sectionsep
+
+\resumeHeading{Virtual Tech Camps Instructor}{\customItalic{iD Tech} (Remote)}{}{Dec 2018 – May 2019}
+\begin{tightemize}
+    \item Instructed to 15+ students basic Java programming fundamentals and game design principles through 
+    modifying Minecraft in an online tech camp setting
+    
+\end{tightemize}
+\sectionsep
+
+
 
 %--------------------------------------------------------------
 %     Projects
 %--------------------------------------------------------------
-\section{Projects}
+\section{\underline{Projects}}
 
-\Project{Automated Spear-Phisher}{https://github.com/Aarif123456/Fb-Twitter-gui}
-\descript{Python, PySpark, Selenium, Apache, NLP, Big Data}\\
-A security research tool to send targeted spam messages on either Facebook or Twitter. The program analyzes the feed of its target to increase the effectiveness of the messages.\\
+\Project{Quick on the Trigger Trivia Bot} 
+\descript{March 2021 - April 2021}
+    \begin{tightemize}
+        \item Developed an interactive Discord trivia chat bot using Node.js, Mongoose, and MongoDB 
+        to store player information and scores
+        \item Utilized an AWS EC2 instance to host the bot and deployed on a Discord chat server 
+        consisting of 1000+ members
+    \end{tightemize}
 \sectionsep
   
-\Project{Image Repository}{https://github.com/Aarif123456/image\_repository}
-\descript{Java, PHP, React, TypeScript, Maven, GCP, MySQL}\hfill \\
-A full-stack image repository, where users can store their files. Created a GCP cloud function to implement \href{https://www.cs.utexas.edu/~bwaters/publications/papers/cp-abe.pdf}{CP-ABE} encryption and used it to ensure files are secure at rest.\\
+\Project{kevinha.me}
+\descript{December 2020 - February 2021}
+    \begin{tightemize}
+        \item Programmed and designed from scratch a responsive personal website using HTML, CSS, 
+        Bootstrap \\framework and deployed using Netlify
+    \end{tightemize}
 \sectionsep
   
-\Project{Biometric Dynamic Keystroke Spoofer}{https://github.com/Aarif123456/KeystrokeDynamicsSpoofer}
-\descript{Python, Object-Oriented Design, CyberSecurity}\\
-A program that authenticates users based on their typing patterns. And a spoofer that uses the genetic algorithm to mimic the user's typing pattern.\\
-\sectionsep
-
-\Project{War of Weebles}{https://github.com/Aarif123456/GoalOrientedBehaviour}
-\descript{ C\#, Unity, Concurrency, Artificial Intelligence}\\
-A capture-the-flag-styled shooting game composed of AI-controlled players. The agents change their goals based on various factors, such as their health, current weapon, their personality and what they see.\\
-\sectionsep
-  
-\Project{Hogwart\textquotesingle{}s Library Management System}{https://github.com/Aarif123456/hogwartslibrary}
-\descript{ PHP, JavaScript, HTML, CSS, MySQL}\\
-A full-stack library management system, where users can manage books and holds on their accounts. Users can also search the library\textquotesingle{}s catalogue, which has every book mentioned in the Harry Potter series. The system distinguishes between different users. Such as librarians who can also check or return books on behalf of users.\\
-\sectionsep
+\Project{COVID-19 Checklist App (DuckHacks 2020)} 
+\descript{August 2020}
+\begin{itemize}
+    \item Collaborated on developing the UI and back-end of an Android App using Java, XML, and Google Cloud Firestore to provide a checklist and real-time chat room to discuss COVID-19 symptoms as well as locations \\of nearby testing centers
+\end{itemize}
+\smallSep
 
 %--------------------------------------------------------------
-%     Skills
+%     Activities
 %--------------------------------------------------------------
-\section{Skills}
-% \begin{resumeSkillList}
-%     \item{
-%         \singleItem{Languages:}{Java, C++, Python, C\#, PHP, JavaScript, TypeScript, HTML/CSS, Prolog, Bash}
-%         \\
-%         \singleItem{Technology:}{Git, React, AWS, GCP, Azure, Docker, Unity, Apache, \LaTeX}
-%         \\
-%         \singleItem{Databases:}{SQL, MongoDB, Neo4j, DynamoDB}
-%     }
-% \end{resumeSkillList}
-
-%  A more concise alternate 
-\begin{resumeSkillList}
-    \small{\item{
-    \doubleItem{Languages:}{Java, C++, Python, C\#, PHP, Prolog, C, Racket}%
-    {Web Development:}{JavaScript, React, CSS, HTML}
-    \\
-    \doubleItem{Technology:}{Git, AWS, GCP, Azure, Docker, Unity, Apache, \LaTeX}%
-    {Databases:}{SQL (PostGres), MongoDB, Neo4j}
-    }}
-\end{resumeSkillList}
+\section{\underline{Activities}}
+\resumeHeading{Castle Point Anime Convention Club}{\customItalic{Stevens Institute of Technology} (Hoboken, NJ)}{}{2019 – Present}
+\begin{tightemize}
+    \item Served as the Webmaster for Castle Point Anime Convention and utilized AWS Amplify, Hugo, and Git to \\deploy and maintain their website, 
+    which receives an average of 200+ page views a week
+    %  \item Here is another bullet that I might choose to uncomment for some jobs
+    \item Developed an interactive webpage for local vendors and artists to advertise their products during the virtual 2021 Castle Point Anime Convention
+    \item Collaborated with the Panels Committee in reviewing and approving panelists applications for the convention
+\end{tightemize}
+\sectionsep
 \end{document}

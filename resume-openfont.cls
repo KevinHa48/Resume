@@ -26,6 +26,7 @@
 % Set up font 
 \RequirePackage{local-font}
 
+
 %--------------------------------------------------------------
 % Reformatting default sections
 % section
@@ -33,7 +34,7 @@
 \titleformat{\section}{%
 \color{headings}% Using comments to allow us to split the command across multiple line
 \scshape%
-\customMedium%
+\customBold{}%
 \fontsize{16pt}{20pt}%first number is size, second number is space between lines
 \selectfont%
 \raggedright%
@@ -44,7 +45,7 @@
 \titlespacing{\subsection}{0pt}{\parskip}{-\parskip}
 \titleformat{\subsection}{%
 \color{subheadings}%
-\customMedium%
+\customBold%
 \fontsize{12pt}{12pt}%
 \selectfont%
 \bfseries%
@@ -72,11 +73,11 @@
 % Subheadings command - create different types of heading
 \newcommand{\runsubsection}[1]{%
 \color{subheadings}%
-\customMedium%
-\fontsize{12pt}{12pt}%
+\customBold%
+\fontsize{11pt}{11pt}%
 \selectfont%
 \bfseries%
-\uppercase{#1}%
+{#1}%
 \normalfont}%
 
 % Descriptors command
@@ -84,16 +85,18 @@
 \color{subheadings}%
 \raggedright%
 \scshape%
-\customMedium%
+\customBold%
 \fontsize{11pt}{13pt}%
 \selectfont{#1}%
+\fakeNewLine
+\NoSpace
 \normalfont}
 
 % Location command
 \newcommand{\location}[1]{%
 \color{headings}%
 \raggedright%
-\customMedium%
+\customBold%
 \fontsize{11pt}{13pt}%
 \selectfont{#1}%
 \normalfont}
@@ -103,16 +106,15 @@
 \color{subheadings}%
 \raggedright%
 \scshape%
-\customMedium%
+\customBold%
 \fontsize{11pt}{12pt}%
 \selectfont{#1}%
 \normalfont}
 
 % Project command
-\newcommand{\Project}[2]{\runsubsection{%
-    \lowercase{\href{#2}}{#1 \,\faExternalLink}
+\newcommand{\Project}[1]{\runsubsection{%
+    {#1\hfill}
     }
-    \hfill
 }
 
 % Command for table 
@@ -124,12 +126,12 @@
 \newcommand{\sectionsep}[0]{\vspace*{6pt}}
 
 % small separators command
-\newcommand{\smallSep}[0]{\vspace*{3pt}}
+\newcommand{\smallSep}[0]{\vspace*{2pt}}
 
 %--------------------------------------------------------------
 % Bullet Lists with fewer gaps command
 \newenvironment{tightemize}{
-    \vspace{-1mm}
+    \vspace{-1.5mm}
     \begin{itemize}
     \itemsep1pt 
     \parskip1.5pt 
@@ -141,7 +143,7 @@
 
 % Command for skill table
 \newenvironment{resumeSkillList}{
-       \begin{itemize}[leftmargin=0.07cm, label={}]
+       \begin{itemize}[leftmargin=0.03cm, label={}]
     }{
         \end{itemize}
     }
