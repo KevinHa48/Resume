@@ -94,7 +94,7 @@
 
 % Location command
 \newcommand{\location}[1]{%
-\color{headings}%
+\color{subheadings}%
 \raggedright%
 \customBold%
 \fontsize{11pt}{13pt}%
@@ -118,7 +118,7 @@
 }
 
 % Command for table 
-\newcommand{\singleItem}[2]{\location{#1} #2}
+\newcommand{\singleItem}[2]{\location{#1} \customRegular{#2}}
 \newcommand{\doubleItem}[4]{\singleItem{#1}{#2}\hspace*{\fill} \singleItem{#3}{#4}}
 
 %--------------------------------------------------------------
