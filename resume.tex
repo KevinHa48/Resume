@@ -1,7 +1,7 @@
 \documentclass[]{resume-openfont}
 %--------------------------------------------------------------
 % Convenience command - make it easy to fill template
-
+\usepackage{multirow}
 % Create job position command. Parameters: company, position, location, when
 \newcommand{\resumeHeading}[4]{\runsubsection{#1,  #2}\hfill\location{#3 #4}\fakeNewLine\NoSpace}
 
@@ -26,6 +26,7 @@
 %--------------------------------------------------------------
 %     Profile
 %--------------------------------------------------------------
+\newcommand{\yourName}{Kevin M Ha}
 \newcommand{\yourWebsite}{kevinha.me}
 \newcommand{\yourEmail}{kh220kh@gmail.com}
 \newcommand{\yourPhone}{845-527-3080}
@@ -33,24 +34,17 @@
 \newcommand{\linkedInUserName}{kha48}
 
 \alignProfileTable
-% \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
-%     \textbf{\href{\yourWebsite}{\Large \yourName}} & 
-%     Email : \href{mailto:\yourEmail}{\yourEmail}
-%     \\
-%     \href{https://github.com/\githubUserName}{GitHub://\githubUserName} & 
-%     Mobile : \yourPhone
-%     \\
-%     \href{https://www.linkedin.com/in/\linkedInUserName}{LinkedIn://\linkedInUserName} & Website : \href{\yourWebsite}{abdullaharif.tech}
-%     \\
-% \end{tabular*}
-% \smallSep
-
-\begin{flushleft}
-    \hfill \small{845-527-3080} \\
-    \hfill \small{kh220kh@gmail.com} \\
-    \hfill {\small{LinkedIn: \linkedInUserName}} \\
-    \hfill {\small{Github: \githubUserName}}
-\end{flushleft}
+\begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+    \textbf{\href{\yourWebsite}{\Huge \customBold{\yourName}}} & 
+    \customRegular{\vspace{0.05cm}\large\yourPhone} 
+    \\
+    \customRegular{\Large{kevinha.me}} & 
+    \customRegular{\large{GitHub: KevinHa48}}\vspace{0.05cm}
+    \\
+    \customRegular{\large\yourEmail} & \large{\customRegular{LinkedIn: kha48}}
+    \\
+\end{tabular*}
+\sectionsep
 
 %--------------------------------------------------------------
 %     Education
@@ -96,15 +90,15 @@
 \end{tightemize}
 \sectionsep
 
-\resumeHeading{Technology Research Intern}{\customItalic{FluroSat} (Remote)}{}{Feb 2020 - May 2020}
+\resumeHeading{Technology Research Intern}{\customItalic{FluroSat} (Remote)}{}{June 2020 - August 2020}
 \begin{tightemize}
     \item \customRegular{Collaborated on research to refine FluroSat’s current marketing strategies by performing analysis on competitor initiatives and compiling 100s of customer data to identify new clientele}
-    \item Utilized Pandas data science library to organize competitor social media data and trends to enhance FluroSat’s online presence
+    \item Utilized Pandas data science library to organize competitor social media data and trends to enhance FluroSat’s \\ online presence
     
 \end{tightemize}
 \sectionsep
 
-\resumeHeading{Virtual Tech Camps Instructor}{\customItalic{iD Tech} (Remote)}{}{Dec 2018 – May 2019}
+\resumeHeading{Virtual Tech Camps Instructor}{\customItalic{iD Tech} (Remote)}{}{June 2020 – July 2020}
 \begin{tightemize}
     \item \customRegular{Instructed to 15+ students basic Java programming fundamentals and game design principles through 
     modifying Minecraft in an online tech camp setting}
@@ -133,16 +127,16 @@
 \descript{December 2020 - February 2021}
     \begin{tightemize}
         \item \customRegular{Programmed and designed from scratch a responsive personal website using HTML, CSS, 
-        Bootstrap \\framework and deployed using Netlify}
+        Bootstrap framework \\ and deployed using Netlify}
     \end{tightemize}
 \sectionsep
   
 \Project{COVID-19 Checklist App, \customItalic{DuckHacks 2020}} 
 \descript{August 2020}
-\begin{itemize}
-    \item \customRegular{Collaborated on developing the UI and back-end of an Android App using Java, XML, and Google Cloud Firestore to provide a checklist and real-time chat room to discuss COVID-19 symptoms as well as locations \\of nearby testing centers}
-\end{itemize}
-\smallSep
+    \begin{tightemize}
+        \item \customRegular{Collaborated on developing the UI and back-end of an Android App using Java, XML, and Google Cloud Firestore \\ to provide a checklist and real-time chat room to discuss COVID-19 symptoms as well as locations of nearby \\ testing centers}
+    \end{tightemize}
+\sectionsep
 
 %--------------------------------------------------------------
 %     Activities

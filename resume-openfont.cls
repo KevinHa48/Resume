@@ -21,8 +21,6 @@
 \RequirePackage{enumitem}
 % Using tables like the profile section
 \RequirePackage{tabularx}
-% Used for the link symbol
-\RequirePackage{fontawesome}
 % Set up font 
 \RequirePackage{local-font}
 
