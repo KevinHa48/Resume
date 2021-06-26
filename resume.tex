@@ -26,7 +26,7 @@
 %--------------------------------------------------------------
 %     Profile
 %--------------------------------------------------------------
-\newcommand{\yourName}{Kevin M Ha}
+\newcommand{\yourName}{Kevin Ha}
 \newcommand{\yourWebsite}{kevinha.me}
 \newcommand{\yourEmail}{kh220kh@gmail.com}
 \newcommand{\yourPhone}{845-527-3080}
@@ -35,34 +35,35 @@
 
 \alignProfileTable
 \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
-    \textbf{\href{\yourWebsite}{\Huge \customBold{\yourName}}} & 
-    \customRegular{\vspace{0.05cm}\large\yourPhone} 
+    %\textbf{{\fontsize{29}{60}\customBold{\yourName}}}
+    & \vspace*{-0.05cm} \customRegular{\yourPhone} 
     \\
-    \customRegular{\Large{kevinha.me}} & 
-    \customRegular{\large{GitHub: KevinHa48}}\vspace{0.05cm}
+    & \vspace*{-0.4cm} \customRegular{\yourEmail}
     \\
-    \customRegular{\large\yourEmail} & \large{\customRegular{LinkedIn: kha48}}
+    \multicolumn{1}{r}{\vspace*{0.01cm}\textbf{\fontsize{29}{60}\customBold{\yourName}}} & \customRegular{GitHub: KevinHa48}
+    \\
+    \customRegular{\large{kevinha.me}}& {\customRegular{LinkedIn: kha48}}
     \\
 \end{tabular*}
-\sectionsep
-
 %--------------------------------------------------------------
 %     Education
 %--------------------------------------------------------------
+\sectionsep
+\smallSep
 \section{\underline{Education}}
 \educationHeading{Stevens Institute of Technology, \customItalic{Hoboken, NJ}}{Bachelor of Science, Computer Science}{GPA: 3.814/4.00}{August 2019 - May 2023}
 \smallSep\\[0.05in]
-\courseWork{Data Structures, Algorithms, Systems Programming, Theory of Computation, Web Development I \\Software Development Process, Discrete Structures}
+\courseWork{Data Structures, Algorithms, Systems Programming, Theory of Computation, Web Development, \\Software Development Process, Discrete Structures}
    
 \sectionsep
 \section{\underline{Skills}}
 \begin{resumeSkillList}
     \item{
-        \singleItem{Languages:}{Java, C++, Python, C, JavaScript, HTML, CSS, Bash, OCaml}
+        \singleItem{\customBold{Languages:}}{Java, C++, Python, C, JavaScript, HTML, CSS, Bash, OCaml}
         \\
-        \singleItem{Frameworks, Libraries and Tools:}{React, SpringBoot, Pandas, Bootstrap, jQuery, Node.js}
+        \singleItem{\customBold{Frameworks, Libraries and Tools:}}{React, SpringBoot, Pandas, Bootstrap, jQuery, Node.js}
         \\
-        \singleItem{Databases, Technology, and OS:}{MongoDB, Git, Linux (Arch \& Ubuntu), AWS, Adobe Photoshop/Premiere Pro}
+        \singleItem{\customBold{Databases, Technology, and OS:}}{MongoDB, Git, Linux (Arch \& Ubuntu), AWS, Adobe Photoshop/Premiere Pro}
         \\
     }
 \end{resumeSkillList}
@@ -85,7 +86,7 @@
 \resumeHeading{Systems Programming Course Assistant}{\customItalic{Stevens Institute of Technology} (Hoboken, NJ)}{}{May 2021 – Present}
 \begin{tightemize}
     \item \customRegular{Hosted weekly office hours and guided a class of 19 students in programming and lab assignments, 
-    covering topics \\such as Bash scripting, C programming in Linux, socket programming, and handling file I/O}
+    covering \\ topics such as Bash scripting, C programming in Linux, socket programming, and handling file I/O}
     %  \item Here is another bullet that I might choose to uncomment for some jobs
 \end{tightemize}
 \sectionsep

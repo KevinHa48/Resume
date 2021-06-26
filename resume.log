@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999993 (TeX Live 2021) (preloaded format=xelatex 2021.6.25)  26 JUN 2021 14:48
+This is XeTeX, Version 3.141592653-2.6-0.999993 (TeX Live 2021) (preloaded format=xelatex 2021.6.25)  26 JUN 2021 16:32
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -497,198 +497,202 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 
 
 LaTeX Font Warning: Font shape `TU/Carlito-Bold(0)/bx/n' undefined
-(Font)              using `TU/Carlito-Bold(0)/m/n' instead on input line 38.
+(Font)              using `TU/Carlito-Bold(0)/m/n' instead on input line 43.
 
 
 LaTeX Font Warning: Font shape `TU/Carlito-Bold(0)/m/sc' undefined
-(Font)              using `TU/Carlito-Bold(0)/m/n' instead on input line 52.
+(Font)              using `TU/Carlito-Bold(0)/m/n' instead on input line 53.
 
-LaTeX Font Info:    Calculating math sizes for size <16> on input line 52.
+LaTeX Font Info:    Calculating math sizes for size <16> on input line 53.
 
 LaTeX Font Warning: Font shape `OML/cmm/m/it' in size <16> not available
-(Font)              size <17.28> substituted on input line 52.
+(Font)              size <17.28> substituted on input line 53.
 
 
 LaTeX Font Warning: Font shape `OMS/cmsy/m/n' in size <16> not available
-(Font)              size <17.28> substituted on input line 52.
+(Font)              size <17.28> substituted on input line 53.
 
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <16> on input line 52.
+(Font)              <16> on input line 53.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <11.19995> on input line 52.
+(Font)              <11.19995> on input line 53.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <8> on input line 52.
+(Font)              <8> on input line 53.
 
 LaTeX Font Warning: Font shape `OT1/cmr/m/n' in size <16> not available
-(Font)              size <17.28> substituted on input line 52.
+(Font)              size <17.28> substituted on input line 53.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 52.
+(hyperref)                removing `math shift' on input line 53.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\@@underline' on input line 52.
+(hyperref)                removing `\@@underline' on input line 53.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\hbox' on input line 52.
+(hyperref)                removing `\hbox' on input line 53.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\mathsurround' on input line 52.
+(hyperref)                removing `\mathsurround' on input line 53.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\z@' on input line 52.
+(hyperref)                removing `\z@' on input line 53.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 52.
+(hyperref)                removing `math shift' on input line 53.
 
 
 LaTeX Font Warning: Font shape `TU/Carlito-Bold(0)/b/n' undefined
-(Font)              using `TU/Carlito-Bold(0)/bx/n' instead on input line 53.
+(Font)              using `TU/Carlito-Bold(0)/bx/n' instead on input line 54.
 
 
 LaTeX Font Warning: Font shape `TU/Carlito-Italic(0)/bx/n' undefined
-(Font)              using `TU/Carlito-Italic(0)/m/n' instead on input line 53.
+(Font)              using `TU/Carlito-Italic(0)/m/n' instead on input line 54.
+
+
+LaTeX Font Warning: Font shape `TU/Carlito-Italic(0)/m/sc' undefined
+(Font)              using `TU/Carlito-Italic(0)/m/n' instead on input line 54.
 
 
 LaTeX Font Warning: Font shape `TU/Carlito-Regular(0)/m/sc' undefined
-(Font)              using `TU/Carlito-Regular(0)/m/n' instead on input line 58.
+(Font)              using `TU/Carlito-Regular(0)/m/n' instead on input line 59.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 58.
+(hyperref)                removing `math shift' on input line 59.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\@@underline' on input line 58.
+(hyperref)                removing `\@@underline' on input line 59.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\hbox' on input line 58.
+(hyperref)                removing `\hbox' on input line 59.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\mathsurround' on input line 58.
+(hyperref)                removing `\mathsurround' on input line 59.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\z@' on input line 58.
+(hyperref)                removing `\z@' on input line 59.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 58.
+(hyperref)                removing `math shift' on input line 59.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 84.
+(hyperref)                removing `math shift' on input line 85.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\@@underline' on input line 84.
+(hyperref)                removing `\@@underline' on input line 85.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\hbox' on input line 84.
+(hyperref)                removing `\hbox' on input line 85.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\mathsurround' on input line 84.
+(hyperref)                removing `\mathsurround' on input line 85.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\z@' on input line 84.
+(hyperref)                removing `\z@' on input line 85.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 84.
+(hyperref)                removing `math shift' on input line 85.
 
 
 LaTeX Font Warning: Font shape `TU/Carlito-Bold(0)/b/n' undefined
-(Font)              using `TU/Carlito-Bold(0)/bx/n' instead on input line 85.
+(Font)              using `TU/Carlito-Bold(0)/bx/n' instead on input line 86.
 
 
 LaTeX Font Warning: Font shape `TU/Carlito-Bold(0)/b/n' undefined
-(Font)              using `TU/Carlito-Bold(0)/bx/n' instead on input line 93.
+(Font)              using `TU/Carlito-Bold(0)/bx/n' instead on input line 94.
 
 
 LaTeX Font Warning: Font shape `TU/Carlito-Bold(0)/b/n' undefined
-(Font)              using `TU/Carlito-Bold(0)/bx/n' instead on input line 101.
+(Font)              using `TU/Carlito-Bold(0)/bx/n' instead on input line 102.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 114.
+(hyperref)                removing `math shift' on input line 115.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\@@underline' on input line 114.
+(hyperref)                removing `\@@underline' on input line 115.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\hbox' on input line 114.
+(hyperref)                removing `\hbox' on input line 115.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\mathsurround' on input line 114.
+(hyperref)                removing `\mathsurround' on input line 115.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\z@' on input line 114.
+(hyperref)                removing `\z@' on input line 115.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 114.
+(hyperref)                removing `math shift' on input line 115.
 
 
 LaTeX Font Warning: Font shape `TU/Carlito-Bold(0)/b/n' undefined
-(Font)              using `TU/Carlito-Bold(0)/bx/n' instead on input line 116.
+(Font)              using `TU/Carlito-Bold(0)/bx/n' instead on input line 117.
 
 
 LaTeX Font Warning: Font shape `TU/Carlito-Bold(0)/b/n' undefined
-(Font)              using `TU/Carlito-Bold(0)/bx/n' instead on input line 126.
+(Font)              using `TU/Carlito-Bold(0)/bx/n' instead on input line 127.
 
 
 LaTeX Font Warning: Font shape `TU/Carlito-Bold(0)/b/n' undefined
-(Font)              using `TU/Carlito-Bold(0)/bx/n' instead on input line 134.
+(Font)              using `TU/Carlito-Bold(0)/bx/n' instead on input line 135.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 144.
+(hyperref)                removing `math shift' on input line 145.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\@@underline' on input line 144.
+(hyperref)                removing `\@@underline' on input line 145.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\hbox' on input line 144.
+(hyperref)                removing `\hbox' on input line 145.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\mathsurround' on input line 144.
+(hyperref)                removing `\mathsurround' on input line 145.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\z@' on input line 144.
+(hyperref)                removing `\z@' on input line 145.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 144.
+(hyperref)                removing `math shift' on input line 145.
 
 
 LaTeX Font Warning: Font shape `TU/Carlito-Bold(0)/b/n' undefined
-(Font)              using `TU/Carlito-Bold(0)/bx/n' instead on input line 145.
+(Font)              using `TU/Carlito-Bold(0)/bx/n' instead on input line 146.
 
 
 LaTeX Font Warning: Font shape `TU/Carlito-Bold(0)/b/n' undefined
-(Font)              using `TU/Carlito-Bold(0)/bx/n' instead on input line 148.
+(Font)              using `TU/Carlito-Bold(0)/bx/n' instead on input line 149.
 
 
 LaTeX Font Warning: Font shape `TU/Carlito-Bold(0)/b/n' undefined
-(Font)              using `TU/Carlito-Bold(0)/bx/n' instead on input line 151.
+(Font)              using `TU/Carlito-Bold(0)/bx/n' instead on input line 152.
 
 [1
 
@@ -704,11 +708,11 @@ Package rerunfilecheck Info: File `resume.out' has not changed.
 (rerunfilecheck)             Checksum: 653541805E29A3A98BB5D252AF666041;458.
  ) 
 Here is how much of TeX's memory you used:
- 15799 strings out of 476443
- 285462 string characters out of 5793955
+ 15794 strings out of 476443
+ 285283 string characters out of 5793955
  685869 words of memory out of 5000000
- 36067 multiletter control sequences out of 15000+600000
- 406796 words of font info for 70 fonts, out of 8000000 for 9000
+ 36066 multiletter control sequences out of 15000+600000
+ 406772 words of font info for 67 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
  117i,7n,122p,335b,335s stack positions out of 5000i,500n,10000p,200000b,80000s
 

@@ -83,7 +83,7 @@
 \color{subheadings}%
 \raggedright%
 \scshape%
-\customBold%
+\customItalic%
 \fontsize{11pt}{13pt}%
 \selectfont{#1}%
 \fakeNewLine
@@ -94,7 +94,7 @@
 \newcommand{\location}[1]{%
 \color{subheadings}%
 \raggedright%
-\customBold%
+\customItalic%
 \fontsize{11pt}{13pt}%
 \selectfont{#1}%
 \normalfont}
