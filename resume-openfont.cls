@@ -12,7 +12,7 @@
 % Package Imports
 \RequirePackage[english]{babel}
 % Set boundaries
-\RequirePackage[hmargin=1cm, vmargin=0.94cm]{geometry}
+\RequirePackage[hmargin=1cm, vmargin=0.65cm]{geometry}
 % remove ugly boxes around links
 \RequirePackage[hidelinks]{hyperref}
 % setup custom titles
@@ -30,7 +30,7 @@
 % section
 \titlespacing{\section}{0pt}{0pt}{0pt}
 \titleformat{\section}{%
-\color{headings}% Using comments to allow us to split the command across multiple line
+\color{subheadings}% Using comments to allow us to split the command across multiple line
 \scshape%
 \customBold{}%
 \fontsize{16pt}{20pt}%first number is size, second number is space between lines
@@ -129,10 +129,10 @@
 %--------------------------------------------------------------
 % Bullet Lists with fewer gaps command
 \newenvironment{tightemize}{
-    \vspace{-1.5mm}
+    \vspace{-0.40mm}
     \begin{itemize}
     \itemsep1pt 
-    \parskip1.5pt 
+    \parskip0.5pt 
     \parsep1.5pt
     }{
         \end{itemize}
