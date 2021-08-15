@@ -33,7 +33,7 @@
 \color{subheadings}% Using comments to allow us to split the command across multiple line
 \scshape%
 \customBold{}%
-\fontsize{16pt}{20pt}%first number is size, second number is space between lines
+\fontsize{14.5pt}{23.5pt}%first number is size, second number is space between lines
 \selectfont%
 \raggedright%
 \uppercase%
@@ -84,7 +84,7 @@
 \raggedright%
 \scshape%
 \customItalic%
-\fontsize{11pt}{13pt}%
+\fontsize{10.5pt}{12pt}%
 \selectfont{#1}%
 \fakeNewLine
 \NoSpace
@@ -95,7 +95,7 @@
 \color{subheadings}%
 \raggedright%
 \customItalic%
-\fontsize{11pt}{13pt}%
+\fontsize{10.5pt}{12pt}%
 \selectfont{#1}%
 \normalfont}
 
