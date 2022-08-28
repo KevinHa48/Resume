@@ -130,7 +130,7 @@
 % Bullet Lists with fewer gaps command
 \newenvironment{tightemize}{
     \vspace{-0.40mm}
-    \begin{itemize}
+    \begin{itemize}[leftmargin=6mm]
     \itemsep1pt 
     \parskip0.5pt 
     \parsep1.5pt
