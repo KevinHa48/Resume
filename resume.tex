@@ -28,7 +28,7 @@
 %--------------------------------------------------------------
 \newcommand{\yourName}{Kevin Ha}
 \newcommand{\yourWebsite}{kevinha.me}
-\newcommand{\yourEmail}{kh220kh@gmail.com}
+\newcommand{\yourEmail}{work@kevinha.me}
 \newcommand{\yourPhone}{845-527-3080}
 \newcommand{\githubUserName}{KevinHa48}
 \newcommand{\linkedInUserName}{kha48}
@@ -50,20 +50,20 @@
 %--------------------------------------------------------------
 \smallSep
 \section{\underline{Education}}
-\educationHeading{Stevens Institute of Technology, \customItalic{Hoboken, NJ}}{Bachelor of Science \& Master of Science, Computer Science}{GPA: 3.86/4.00}{August 2019 – May 2024}
+\educationHeading{Stevens Institute of Technology, \customItalic{Hoboken, NJ}}{Bachelor of Science, Computer Science}{GPA: 3.83/4.00}{August 2019 – May 2023}
 \smallSep\\[0.10in]
 \courseWork{Data Structures, Algorithms, Web Programming, Agile Methods for Software Development, \\ Systems Programming, Database Management Systems, Concurrent Programming, Operating Systems, Programming Languages}
    
 \section{\underline{Skills}}
 \begin{resumeSkillList}
     \item{
-        \singleItem{\customBold{Languages:}}{Java, C++, Python, C, JavaScript, TypeScript, HTML, CSS, Bash, Terraform}
+        \singleItem{\customBold{Languages:}}{Java, C++, Python, C, JavaScript, TypeScript, HTML, CSS, Bash, Terraform, SQL}
         \\
         \smallSep
         \singleItem{\customBold{Frameworks and Libraries:}}{React, Vue, Nuxt.js, Jest, Cypress, Express.js, Node.js, jQuery, Tailwind CSS}
         \\
         \smallSep
-        \singleItem{\customBold{Databases, Tools, and OS:}}{MongoDB, Git, Linux (Arch \& Ubuntu), AWS (Cloud Practitioner Certified), Jira, Shopify}
+        \singleItem{\customBold{Databases, Tools, and OS:}}{Docker, MongoDB, Git, Linux, AWS (Cloud Practitioner Certified), Jira, Grafana}
     }
 \end{resumeSkillList}
 %  A more concise alternate 
@@ -81,18 +81,20 @@
 %--------------------------------------------------------------
 \vspace*{-7pt}
 \section{\underline{Experience}}
-\resumeHeading{Software Engineering Intern}{\customItalic{JPMorgan Chase \& Co.} (Jersey City, NJ)}{}{June 2022 – Present}
+\resumeHeading{Software Engineering Intern}{\customItalic{JPMorgan Chase \& Co.} (Jersey City, NJ)}{}{June 2022 – December 2022}
 \begin{tightemize}
     \item \customRegular{ Led the integration of a new incident analysis tool into Site Reliability dashboards using React and Flask}
     \item { Deployed AWS Lambda functions with Terraform to clean cloud resources which contributed to \$40,000 of monthly savings }
+    \item { Developed a Python backend integrated with a CI/CD pipeline that aggregates client data across trading platforms  }
+    \item { Designed Grafana dashboards to monitor and provide visualization of client data on trading platforms   }
     \item { Increased and maintained a code coverage average of 90\% for Python and Jest unit tests }
 \end{tightemize}
 \sectionsep
 
-\resumeHeading{Course Assistant}{\customItalic{Stevens Institute of Technology} (Hoboken, NJ)}{}{May 2021 – Present}
+\resumeHeading{Course Assistant}{\customItalic{Stevens Institute of Technology} (Hoboken, NJ)}{}{May 2021 – December 2022}
 \begin{tightemize}
     \item \customRegular{Guided students across two semesters of Systems Programming which covered Bash scripting and C programming in Linux }
-    \item {Assisted students in Graduate Web Development which covered full-stack engineering with Node.js, Express.js, and MongoDB} 
+    \item {Assisted students in Graduate Web Development which covered full-stack development with Node.js, Express.js, and MongoDB} 
 \end{tightemize}
 \sectionsep
 
@@ -119,38 +121,42 @@
 \end{tightemize}
 \sectionsep
 
-\resumeHeading{Technology Research Intern}{\customItalic{FluroSat} (Remote)}{}{June 2020 – August 2020}
-\begin{tightemize}
-    \item \customRegular{Analyzed competitor marketing initiatives and social media data using Pandas data analysis library to improve FluroSat's \\ online presence and current marketing strategies}
-\end{tightemize}
+% \resumeHeading{Technology Research Intern}{\customItalic{FluroSat} (Remote)}{}{June 2020 – August 2020}
+% \begin{tightemize}
+%     \item \customRegular{Analyzed competitor marketing initiatives and social media data using Pandas data analysis library to improve FluroSat's \\ online presence and current marketing strategies}
+% \end{tightemize}
 
 %--------------------------------------------------------------
 %     Projects
 %--------------------------------------------------------------
 \section{\underline{Projects}}
 
-\Project{Spot-Stats} 
-\descript{August 2021 – Present}
+\Project{AA-DR Portal, \customItalic{Castle Point Anime Convention}} 
+\descript{January 2023 – Present}
     \begin{tightemize}
-        \item \customRegular{Utilized Spotify's API to create a web application that provides data and information on a user's music listening habits}
-        \item \customRegular{Programmed the website's back-end using TypeScript and Express along with React for the front-end}
+        \item \customRegular{Overhauled a manual process of onboarding convention vendors by developing an online web portal using React and Flask}
+        \item \customRegular{Created a uniform development environment using Docker and deployed as a containerized application to AWS ECS}
     \end{tightemize}
 \sectionsep
 
-\Project{Quick on the Trigger Trivia Bot} 
+\Project{Shima, \customItalic{HackNJIT 2022 First Place Winner}} 
+\descript{November 2022}
+    \begin{tightemize}
+        \item \customRegular{Built an app with Flutter that provides a trail for lost hikers to retrace their steps using Google Maps API }
+    \end{tightemize}
+
+\sectionsep
+
+\Project{Quick on the Trigger Trivia Bot, \customItalic{Castle Point Anime Convention}} 
 \descript{March 2021 – May 2021}
     \begin{tightemize}
-        \item \customRegular{Developed an interactive Discord trivia chat bot for 2021 Castle Point Anime Convention using Node.js and MongoDB
+        \item \customRegular{Developed an interactive Discord trivia chat bot for virtual convention attendees using Node.js and MongoDB
         \item Deployed an AWS EC2 instance to host the bot and released on a Discord chat server 
         consisting of 1000+ members}
     \end{tightemize}
 \sectionsep
 
-\Project{COVID-19 Checklist App, \customItalic{DuckHacks 2020}} 
-\descript{August 2020}
-    \begin{tightemize}
-        \item \customRegular{Developed the UI and back-end of an Android app using Java, XML, and Google Cloud Firestore to provide locations \\ of nearby testing centers, an interactive symptom checklist, and a real-time chat room to discuss COVID-19 issues}
-    \end{tightemize}
+
 
 %--------------------------------------------------------------
 %     Activities
