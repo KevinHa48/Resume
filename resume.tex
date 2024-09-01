@@ -3,7 +3,10 @@
 % Convenience command - make it easy to fill template
 \usepackage{multirow}
 % Create job position command. Parameters: company, position, location, when
-\newcommand{\resumeHeading}[4]{\runsubsection{#1,  #2}\hfill\location{#3 #4}\fakeNewLine\NoSpace}
+% \newcommand{\resumeHeading}[4]{\runsubsection{#1,  #2}\hfill\location{#3 #4}\fakeNewLine\NoSpace}
+
+\newcommand{\resumeHeading}[4]{\runsubsection{#1}\hspace*{\fill}  \location{#4}\\
+\descript{#2\hspace*{\fill}{#3}}\fakeNewLine}
 
 % Create education heading. Parameters: Name, degree, location, when
 \newcommand{\educationHeading}[4]{\runsubsection{#1}\hspace*{\fill}  \location{#4}\\
@@ -26,10 +29,10 @@
 %--------------------------------------------------------------
 %     Profile
 %--------------------------------------------------------------
-\newcommand{\yourName}{Kevin Ha}
+\newcommand{\yourName}{Kevin M Ha}
 \newcommand{\yourWebsite}{kevinha.me}
-\newcommand{\yourEmail}{work@kevinha.me}
-\newcommand{\yourPhone}{845-527-3080}
+\newcommand{\yourEmail}{work@kevinha.com}
+\newcommand{\yourPhone}{(845)-527-3080}
 \newcommand{\githubUserName}{KevinHa48}
 \newcommand{\linkedInUserName}{kha48}
 
@@ -40,30 +43,37 @@
     \\
     & \vspace*{-0.5cm} \customRegular{\yourEmail}
     \\
-    \multicolumn{1}{r}{\vspace*{0.005cm}\textbf{\fontsize{31}{60}\customBold{\yourName}}} & \customRegular{GitHub: KevinHa48}
+    \multicolumn{1}{r}{\vspace*{0.005cm}\textbf{\fontsize{31}{60}\customBold{\yourName}}} & \customRegular{Github: \githubUserName}
     \\
-    \customRegular{\large{kevinha.me}}& {\customRegular{LinkedIn: kha48}}
+    \customRegular{\large{\yourWebsite}}& {\customRegular{LinkedIn: \linkedInUserName}}
     \\
 \end{tabular*}
 %--------------------------------------------------------------
 %     Education
 %--------------------------------------------------------------
 \smallSep
-\section{\underline{Education}}
-\educationHeading{Stevens Institute of Technology, \customItalic{Hoboken, NJ}}{Bachelor of Science, Computer Science}{GPA: 3.83/4.00}{August 2019 – May 2023}
-\smallSep\\[0.10in]
-\courseWork{Data Structures, Algorithms, Web Programming, Agile Methods for Software Development, \\ Systems Programming, Database Management Systems, Concurrent Programming, Operating Systems, Programming Languages}
+\section{Education}
+\hrule
+\vspace*{0.1in}
+\resumeHeading{Stevens Institute of Technology}{Bachelor of Science, Computer Science}{GPA: 3.83/4.00}{August 2019 – May 2023}
+\smallSep\\[0.05in]
    
-\section{\underline{Skills}}
+\section{Skills}
+\hrule
+\vspace*{0.1in}
 \begin{resumeSkillList}
     \item{
         \singleItem{\customBold{Languages:}}{Java, C++, Python, C, JavaScript, TypeScript, HTML, CSS, Bash, Terraform, SQL}
         \\
         \smallSep
-        \singleItem{\customBold{Frameworks and Libraries:}}{React, Vue, Nuxt.js, Jest, Cypress, Express.js, Node.js, jQuery, Tailwind CSS}
+        \singleItem{\customBold{Frameworks and Libraries:}}{Springboot, React, Next.js, Redux, Vue, Nuxt.js, Express.js, Node.js, Storybook}
         \\
         \smallSep
-        \singleItem{\customBold{Databases, Tools, and OS:}}{Docker, MongoDB, Git, Linux, AWS (Cloud Practitioner Certified), Jira, Grafana}
+        % feel free to swap 'cloud practioner' out for exact aws tools used depending on job description...
+        \singleItem{\customBold{Databases, Tools, and Services:}}{Docker, Kubernetes, Splunk, MongoDB, Git, AWS (Cloud Practitioner Certified), Grafana}
+        \\
+        \smallSep
+        \singleItem{\customBold{Testing:}}{Jest, Cypress, Cucumber, JUnit, React Testing Library}
     }
 \end{resumeSkillList}
 %  A more concise alternate 
@@ -80,46 +90,49 @@
 %     Experience
 %--------------------------------------------------------------
 \vspace*{-7pt}
-\section{\underline{Experience}}
-\resumeHeading{Software Engineering Intern}{\customItalic{JPMorgan Chase \& Co.} (Jersey City, NJ)}{}{June 2022 – December 2022}
+\section{Experience}
+\hrule
+\vspace*{0.1in}
+
+\resumeHeading{JPMorgan Chase \& Co.}{Software Engineer I}{Jersey City, NJ}{August 2023 – Present}
 \begin{tightemize}
-    \item \customRegular{ Led the integration of a new incident analysis tool into Site Reliability dashboards using React and Flask}
+    \item \customRegular{ Spearheaded development of JUnit tests for an application which tracks the migration of 1500+ APIs across data centers, increasing coverage from 0\% to 85\%  }
+    \item { Implemented new features in a Command Line Interface (CLI) application used monthly by 1300+ internal users to manage APIs across API Gateways using Go  }
+    \item { Developed features for a self-service API subscription tool which contributed to overhauling previous manual developer workflows using Java and Springboot  }
+\end{tightemize}
+\sectionsep
+
+\resumeHeading{JPMorgan Chase \& Co.}{Software Engineer Intern}{Jersey City, NJ}{June 2022 – December 2022}
+\begin{tightemize}
+    \item \customRegular{ Led the integration of a new incident analysis tool which improved tracing the cause of downtime for 100+ Asset Wealth Management applications using React and Redux  }
     \item { Deployed AWS Lambda functions with Terraform to clean cloud resources which contributed to \$40,000 of monthly savings }
-    \item { Developed a Python backend integrated with a CI/CD pipeline that aggregates client data across trading platforms  }
-    \item { Designed Grafana dashboards to monitor and provide visualization of client data on trading platforms   }
+    % \item { Developed a Python backend integrated with a CI/CD pipeline that aggregates client data across trading platforms  }
+    % \item { Designed Grafana dashboards to monitor and provide visualization of client data on trading platforms   }
     \item { Increased and maintained a code coverage average of 90\% for Python and Jest unit tests }
 \end{tightemize}
 \sectionsep
 
-\resumeHeading{Course Assistant}{\customItalic{Stevens Institute of Technology} (Hoboken, NJ)}{}{May 2021 – December 2022}
+\resumeHeading{Stevens Institute of Technology}{Course Assistant}{Hoboken, NJ}{May 2021 – December 2022}
 \begin{tightemize}
-    \item \customRegular{Guided students across two semesters of Systems Programming which covered Bash scripting and C programming in Linux }
-    \item {Assisted students in Graduate Web Development which covered full-stack development with Node.js, Express.js, and MongoDB} 
+    \item \customRegular{Guided students across two semesters of Systems Programming which covered Bash scripting and C programming }
+    \item {Mentored students in full-stack web development topics using Node.js, Express.js, and MongoDB} 
 \end{tightemize}
 \sectionsep
 
-\resumeHeading{Lead Webmaster}{\customItalic{Stevens Castle Point Anime Convention Club (Hoboken, NJ)}}{}{August 2019 – Present}
+\resumeHeading{Colgate-Palmolive}{Application \& Software Development Intern}{Remote}{January 2022 – May 2022}
 \begin{tightemize}
-    \item \customRegular{ Aided in the development of Castle Point Anime Convention's website using Hugo and deployed with AWS Amplify}
-    \item Created a webpage used to advertise and support 50+ local artists and businesses affected by COVID-19
-    \item Led website maintenance responsibilities with a team of 10 student developers using Scrum principles and Jira
-\end{tightemize}
-\sectionsep
-
-\resumeHeading{Application \& Software Development Intern}{\customItalic{Colgate-Palmolive} (Piscataway, NJ)}{}{January 2022 – May 2022}
-\begin{tightemize}
-    \item \customRegular{ Developed responsive user interface components for Colgate's Direct-To-Consumer websites using Vue and Tailwind CSS}
-    \item { Utilized Jest and Cypress to create unit tests for Vue components and to perform end-to-end testing }
+    \item \customRegular{ Developed responsive user interface components for Direct-To-Consumer websites using Vue, Nuxt.js and Tailwind CSS}
+    \item { Utilized Jest and Cypress to create unit tests for Vue components and thorough end-to-end tests.}
     \item { Collaborated with engineers through scrum stand-ups, code reviews, and pair programming to ship production ready code }
 \end{tightemize}
 \sectionsep
 
-\resumeHeading{IT Operations Intern}{\customItalic{Colgate-Palmolive} (Piscataway, NJ)}{}{August 2021 – December 2021}
-\begin{tightemize}
-    \item \customRegular{Contributed to the transition of over 50,000 batch jobs used for global business operations across automation platforms}
-    \item { Developed an internal tool to make the IT software access requesting process more organized and efficient}
-\end{tightemize}
-\sectionsep
+% \resumeHeading{IT Operations Intern}{\customItalic{Company 2} (Redacted Location)}{}{August 2021 – December 2021}
+% \begin{tightemize}
+%     \item \customRegular{Contributed to the transition of over 50,000 batch jobs used for global business operations across automation platforms}
+%     \item { Developed an internal tool to make the IT software access requesting process more organized and efficient}
+% \end{tightemize}
+% \sectionsep
 
 % \resumeHeading{Technology Research Intern}{\customItalic{FluroSat} (Remote)}{}{June 2020 – August 2020}
 % \begin{tightemize}
@@ -127,46 +140,34 @@
 % \end{tightemize}
 
 %--------------------------------------------------------------
-%     Projects
+%     Projects & Volunteering
 %--------------------------------------------------------------
-\section{\underline{Projects}}
+\section{Projects \& Volunteering}
+\hrule
+\vspace*{0.1in}
 
-\Project{AA-DR Portal, \customItalic{Castle Point Anime Convention}} 
-\descript{January 2023 – Present}
-    \begin{tightemize}
-        \item \customRegular{Overhauled a manual process of onboarding convention vendors by developing an online web portal using React and Flask}
-        \item \customRegular{Created a uniform development environment using Docker and deployed as a containerized application to AWS ECS}
-    \end{tightemize}
+\resumeHeading{Stevens Castle Point Anime Convention Club}{Lead Webmaster (Volunteer)}{Hoboken, NJ}{August 2019 – August 2023}
+\begin{tightemize}
+    \item \customRegular{ Aided in the development of Castle Point Anime Convention's website using Hugo and deployed with AWS Amplify}
+    \item Created a webpage used to advertise and support 50+ local artists and businesses affected by COVID-19
+    \item Led website maintenance responsibilities with a team of 10+ student developers using Agile principles
+\end{tightemize}
 \sectionsep
 
-\Project{Shima, \customItalic{HackNJIT 2022 First Place Winner}} 
-\descript{November 2022}
-    \begin{tightemize}
-        \item \customRegular{Built an app with Flutter that provides a trail for lost hikers to retrace their steps using Google Maps API }
-    \end{tightemize}
-
+\resumeHeading{Shima}{HackNJIT 2022 First Place Winner}{}{August 2019 – August 2023}
+\begin{tightemize}
+    \item \customRegular{Built an app with Flutter which provides a trail for lost hikers to retrace their steps using Google Maps API }
+\end{tightemize}
 \sectionsep
 
-\Project{Quick on the Trigger Trivia Bot, \customItalic{Castle Point Anime Convention}} 
+
+\Project{Quick on the Trigger Trivia Bot} 
 \descript{March 2021 – May 2021}
     \begin{tightemize}
-        \item \customRegular{Developed an interactive Discord trivia chat bot for virtual convention attendees using Node.js and MongoDB
-        \item Deployed an AWS EC2 instance to host the bot and released on a Discord chat server 
+        \item \customRegular{Developed an interactive Discord trivia chat bot for an online Convention using Node.js and MongoDB
+        \item Deployed an AWS EC2 instance to host the bot and released on a chat server 
         consisting of 1000+ members}
     \end{tightemize}
 \sectionsep
 
-
-
-%--------------------------------------------------------------
-%     Activities
-%--------------------------------------------------------------
-\section{\underline{Activities}}
-\resumeHeading{Stevens Computer Science Club}{\customItalic{Secretary}}{}{April 2021 – December 2021}
-\begin{tightemize}
-    \item \customRegular{Hosted an introductory Git and GitHub workshop teaching 40+ students version control fundamentals and best practices}
-    \item {Organized and planned weekly student-run workshops which covered topics from Machine Learning to UI/UX fundamentals}
-\end{tightemize}
-    
-\sectionsep
 \end{document}
