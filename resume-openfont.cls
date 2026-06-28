@@ -131,9 +131,9 @@
 \newenvironment{tightemize}{
     \vspace{-0.40mm}
     \begin{itemize}[leftmargin=6mm]
-    \itemsep1pt 
-    \parskip0.5pt 
-    \parsep1.5pt
+    \setlength{\itemsep}{4pt}
+    \setlength{\parskip}{0.5pt}
+    \setlength{\parsep}{2pt}
     }{
         \end{itemize}
         \vspace{-\topsep}
