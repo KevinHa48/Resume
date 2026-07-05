@@ -2,7 +2,7 @@
 
 > Plain-text extract of `resume.tex`, for skills to read instead of re-parsing the `.tex` or the PDF.
 > **Regenerate this file whenever `resume.tex` changes** (commented-out LaTeX lines are intentionally excluded).
-> Last synced: 2026-07-04 (uncommitted, on top of 0591c68).
+> Last synced: 2026-07-04 (commit 680d0c0).
 
 ## Contact
 - Kevin M Ha — kh220kh@gmail.com — (845)-527-3080
