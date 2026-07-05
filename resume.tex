@@ -77,6 +77,7 @@
 \resumeHeading{JPMorgan Chase \& Co.}{Software Engineer II}{Jersey City, NJ}{February 2026 – Present}
 \begin{tightemize}
      \item \customRegular{ Designed and led development of a real-time notification microservice using Spring Boot and DynamoDB, cutting developer portal alert latency from hours to seconds for 500+ internal users }
+     \item { Owned end-to-end domain migration for the developer portal, engineering a zero-downtime ingress-based routing strategy and driving customer-facing rollout communications }
      \item { Automated integration tests in the Jenkins CI/CD pipeline for a Spring Boot microservice, eliminating manual evidence uploads and recovering 100+ developer-hours annually }
      \item { Overhauled the weekly release changelog process by introducing a Node.js based CLI tool to automatically compile a list of changes, saving release coordinators 20+ hours every month }
      % add in here resiliency / api management work %
@@ -88,10 +89,9 @@
 \begin{tightemize}
     % TODO: Replace the first bullet point with a specific feature you worked on the portal instead, this is not impactful enough and only describes what the platform did to the company, not you.
     \item \customRegular{ Developed a reusable React component library for an API developer portal, enabling self-service API publishing, discovery, subscription, and monitoring for 100+ internal teams }
-    % TODO: Replace this too, maybe add in the resiliency work you did on the portal (e.g., implemented circuit breaker pattern)
-    \item { Contributed new features to automate the API subscription process for internal and external developers within Chase, transforming a previously months-long manual process to an automated process completed in minutes }
+    \item { Implemented circuit breakers on the developer portal backend to isolate downstream API failures under high traffic, reducing alert noise and false-positive incident tickets }
     \item { Engineered a Spring Boot microservice to automate the migration of 1000+ API documentation files from a legacy platform to a new API management system, preserving data integrity and eliminating manual migration work for API owners }
-    \item { Increased code coverage from 0\% to 85\% for an internal application used to track the migration of 1500+ Chase internal APIs across data centers, directly unblocking its first production deployment }
+    \item { Increased code coverage from 0\% to 85\% for an internal application tracking the migration of 1500+ Chase APIs across data centers, meeting the coverage threshold required for its first production deployment }
     \item { Refactored the developer portal to integrate with a policy-based IAM system, replacing role-based authentication to tighten application security and enable fine-grained user access controls }
 \end{tightemize}
 \sectionsep
