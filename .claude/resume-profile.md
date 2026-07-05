@@ -2,7 +2,7 @@
 
 > Plain-text extract of `resume.tex`, for skills to read instead of re-parsing the `.tex` or the PDF.
 > **Regenerate this file whenever `resume.tex` changes** (commented-out LaTeX lines are intentionally excluded).
-> Last synced: 2026-07-04 (uncommitted, on top of e95e9e7).
+> Last synced: 2026-07-04 (uncommitted, on top of 0591c68).
 
 ## Contact
 - Kevin M Ha — kh220kh@gmail.com — (845)-527-3080
@@ -33,11 +33,11 @@
 
 ## Skills
 - **Languages:** TypeScript, JavaScript, Java, Python, HTML, CSS, Bash, Terraform, SQL, GraphQL
-- **Frameworks & Libraries:** React, Next.js, Spring Boot, Redux, Vue, Nuxt.js, Express.js, Node.js, Storybook
+- **Frameworks & Libraries:** React, Next.js, Spring Boot, Redux, Vue, Nuxt.js, Express.js, Node.js
 - **Databases:** DynamoDB, MongoDB, PostgreSQL
 - **Cloud & Tools:** Docker, Kubernetes, Splunk, Git, AWS (EC2, EKS, Lambda), Grafana, Jenkins, Linux, GitHub Copilot
 - **Testing:** Jest, Cypress, Cucumber, JUnit, React Testing Library
-- **Methodologies:** Agile, CI/CD, REST API, Microservices, DevOps
+- **Methodologies:** Agile, CI/CD, REST APIs, Microservices, DevOps
 
 ## Projects
 _(Projects section is currently commented out in resume.tex — not active on the rendered resume.)_
